@@ -7,12 +7,13 @@ import { FaGithub } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 export const Projects = () => {
   return (
-    <main className='h-screen w-full flex flex-col justify-around'>
-        <h3 className='text-5xl font-semibold text-center'>Projects</h3>
-        <motion.div transition={{duration: 1, type: "spring", staggerChildren: 1, delay: 0.5}} 
-        initial={{y: 50, opacity: 0}} whileInView={{y:0, opacity: 1}}
-         className='flex justify-evenly'>
-            <motion.div className='px-7 py-9 border-4 border-light rounded-lg flex flex-col justify-evenly items-center
+    <main className='min-h-screen w-full flex flex-col justify-around'>
+        <h3 className='text-5xl mb-7 md:mb-0 font-semibold text-center'>Projects</h3>
+        <div 
+         className='flex flex-col md:flex-row gap-3 justify-evenly px-5 md:px-0'>
+            <motion.div transition={{duration: 1, type: "spring", delay: 0.3}}
+            initial={{y: 50, opacity: 0}} whileInView={{y:0, opacity: 1}}
+             className='px-7 py-9 border-4 border-light rounded-lg flex flex-col justify-evenly items-center
              bg-light/10 backdrop-blur-lg'>
                 <div className=' w-64 overflow-hidden'>
                     <motion.img whileHover={{scale: 1.1, }} transition={{duration: 0.3}} 
@@ -29,7 +30,9 @@ export const Projects = () => {
                     <a className='opacity-80 hover:opacity-100' href="#"><FiExternalLink className='w-7 h-7'/></a>
                 </div>
             </motion.div>
-            <motion.div className='px-7 py-7 border-4 border-light rounded-lg flex flex-col justify-evenly items-center
+            <motion.div transition={{duration: 1, type: "spring", delay: 0.6}}
+            initial={{y: 50, opacity: 0}} whileInView={{y:0, opacity: 1}}
+            className='px-7 py-7 border-4 border-light rounded-lg flex flex-col justify-evenly items-center
              bg-light/10 backdrop-blur-lg'>
                 <div className=' w-64 overflow-hidden'>
                     <motion.img whileHover={{scale: 1.1, }} transition={{duration: 0.3}} 
@@ -46,7 +49,9 @@ export const Projects = () => {
                     <a className='opacity-80 hover:opacity-100' href="#"><FiExternalLink className='w-7 h-7'/></a>
                 </div>
             </motion.div>
-            <motion.div className='px-7 py-7 border-4 border-light rounded-lg flex flex-col justify-evenly items-center
+            <motion.div transition={{duration: 1, type: "spring", delay: 0.9}}
+            initial={{y: 50, opacity: 0}} whileInView={{y:0, opacity: 1}}
+            className='px-7 py-7 border-4 border-light rounded-lg flex flex-col justify-evenly items-center
              bg-light/10 backdrop-blur-lg'>
                 <div className=' w-64 overflow-hidden'>
                     <motion.img whileHover={{scale: 1.1, }} transition={{duration: 0.3}} className='rounded-md' src={weather} alt="" />
@@ -63,7 +68,7 @@ export const Projects = () => {
                     <a className='opacity-80 hover:opacity-100' href="#"><FiExternalLink className='w-7 h-7'/></a>
                 </div>
             </motion.div>
-        </motion.div>
+        </div>
     </main>
   )
 }

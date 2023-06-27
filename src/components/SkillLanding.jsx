@@ -3,8 +3,8 @@ import { Skills } from './Skills'
 
 export const SkillLanding = () => {
   return (
-    <main className='flex flex-col justify-between'>
-        <h2 className='text-5xl font-semibold text-center'>Skills</h2>
+    <main className='min-h-screen flex flex-col justify-between'>
+        <h2 className='text-5xl mb-20 md:mb-0 font-semibold text-center'>Skills</h2>
         <Skills/>
     </main>
   )

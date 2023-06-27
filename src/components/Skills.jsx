@@ -15,8 +15,8 @@ const CanvasContainer = styled.div`
 `;
 export const Skills = () => {
   return (
-    <main className="flex items-center justify-evenly">
-      <CanvasContainer className=''>
+    <main className="flex flex-col-reverse md:flex-row items-center justify-evenly">
+      <div className='w-full md:w-1/2 h-screen'>
         <Canvas
         shadows
         frameloop='demand'
@@ -40,8 +40,8 @@ export const Skills = () => {
             <Preload all/>
           </Suspense>
         </Canvas>
-      </CanvasContainer>
-      <div className="w-1/2 flex justify-center items-center">
+      </div>
+      <div className="w-full md:w-1/2 flex justify-center items-center">
         <div className=" w-3/4  ">
             <div className="w-3/4  flex flex-col">
               <h3 className="font-semibold text-xl">Front-End:</h3>

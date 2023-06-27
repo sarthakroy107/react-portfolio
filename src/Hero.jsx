@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import ManPic from './assets/ManPic.svg'
 import StarsCanvas from './components/StarsCanvas'
-import { motion } from 'framer-motion'
 import { AnimatedText } from './components/Animatedtext1'
 import Typewriter from 'typewriter-effect'
 import buttoncss from './components/buttoncss.css'
@@ -30,10 +29,10 @@ export const Hero = ({text}) => {
     }, 60);
   }
   return (
-    <main>
-        <StarsCanvas/>
+    <main id='Home'>
+        {/* <StarsCanvas/> */}
         <div className=' relative top-0 z-[2] flex justify-between items-center h-screen w-full'>
-            <div className='w-1/2 flex flex-col items-center justify-center'>
+            <div className=' w-full md:w-1/2 flex flex-col items-center justify-center'>
               <div>
                 <AnimatedText text="Sarthak&nbsp;Roy" />
               </div>
@@ -57,7 +56,7 @@ export const Hero = ({text}) => {
                   <div class="button__drow2"></div>
                 </a>
             </div>
-            <div className=' animate-pingpong w-1/2 flex justify-center items-center'>
+            <div className=' animate-pingpong w-0 md:w-1/2 flex justify-center items-center'>
               <img className='w-96 h-96' src={ManPic} alt="Astronout" />
             </div>
         </div>
