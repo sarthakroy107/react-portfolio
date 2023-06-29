@@ -71,7 +71,7 @@ export const Navbar = () => {
                 </div>
                 <div className='flex w-1/5 gap-3 justify-around'>
                     <motion.a whileHover={{y:-5}}
-                    href="https://github.com/Sarthak28roy" target='_blank'><FaGithub className='w-6 h-6 opacity-75
+                    href="https://github.com/sarthakroy107" target='_blank'><FaGithub className='w-6 h-6 opacity-75
                     hover:opacity-100'/></motion.a>
                     <motion.a whileHover={{y:-5}}
                     href="https://leetcode.com/sarthakroy107/" target='_blank'><SiLeetcode className='w-6 h-6 opacity-75
